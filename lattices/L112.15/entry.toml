@@ -1,0 +1,14 @@
+schema_version = 1
+id = "L112.15"
+dimension = 112
+gram = "gram.txt"
+gram_sha256 = "6a1fef2c3a4f0e14d1dc92b8e0269472dc1c5d129904e616252b63d6cac857ec"
+proof_in_this_release = false
+extremality_status = "open"
+
+[properties]
+positive_definite = true
+even = true
+determinant = 1
+
+[claims]

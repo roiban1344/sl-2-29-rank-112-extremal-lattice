@@ -1,0 +1,15 @@
+schema_version = 1
+id = "L112.14"
+dimension = 112
+gram = "gram.txt"
+gram_sha256 = "bf14ca31b1a5ebf7a0a17d6889e9c2b510d649a6c1cbe0edbb24ebfda62a0d01"
+proof_in_this_release = false
+extremality_status = "computed-proof-not-included"
+
+[properties]
+positive_definite = true
+even = true
+determinant = 1
+
+[claims]
+minimal_norm = 10

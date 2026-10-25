@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite a specific commit or release tag of this lattice data collection."
+type: dataset
+authors:
+  - name: roiban1344
+title: "Rank 112 lattices with an SL2(29) action"
+license: CC-BY-4.0
+abstract: "Gram matrices and metadata for fourteen lattices presented as extremal and one candidate with open minimum. Proofs are not included."
