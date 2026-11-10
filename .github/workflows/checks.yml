@@ -1,0 +1,47 @@
+name: checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-inputs:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Basic facts about the data
+        run: python3 -I code/verify/v0_inputs.py
+      - name: The construction data
+        run: python3 -I code/verify/v2_construction.py
+      - run: pip install pytest==9.1.1
+      - name: Tests
+        run: python -m pytest code/tests -p no:cacheprovider
+
+  quick:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Install GAP
+        run: sudo apt-get update -q && sudo apt-get install -y -q gap-core gap-libs gap-smallgrp
+      - name: All the quick checks, which end with status 0 only if everything ran and passed
+        run: bash code/verify/quick.sh

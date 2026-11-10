@@ -1,10 +1,19 @@
-schema_version = 1
+schema_version = 2
 id = "L112.01"
 dimension = 112
 gram = "gram.txt"
+generators = "generators.txt"
+witness_norm10 = "norm10.txt"
 gram_sha256 = "3081e54672ec07c1dbf539515990d75da28dae55cb66fb1bcfe8fb1a4c30ef4d"
-proof_in_this_release = false
-extremality_status = "external-computer-assisted-proof"
+
+[group]
+generated_order = 1169280
+
+[extremality]
+method = "computer-assisted"
+package = "external"
+package_url = "https://github.com/roiban1344/112-dimensional-extremal-even-unimodular-lattice/tree/v2026-10-19.1"
+review = "none"
 
 [properties]
 positive_definite = true

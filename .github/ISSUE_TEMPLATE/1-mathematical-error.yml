@@ -1,0 +1,30 @@
+name: Mathematical error / 数学的な誤り
+description: An error in a statement, a label or a computation.
+title: "[math] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for checking. Reports in English or Japanese are welcome. / 英語でも日本語でも構いません。
+  - type: input
+    id: version
+    attributes:
+      label: Version / 版
+      description: The commit or tag you read.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location / 箇所
+      description: File and lattice ID, statement or line.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong / 何が誤りか
+      description: The claim, and why it fails or what is missing.
+    validations:
+      required: true

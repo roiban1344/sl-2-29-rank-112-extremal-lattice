@@ -1,10 +1,18 @@
-schema_version = 1
+schema_version = 2
 id = "L112.12"
 dimension = 112
 gram = "gram.txt"
+generators = "generators.txt"
+witness_norm10 = "norm10.txt"
 gram_sha256 = "decee9322d8a545277557292ff901184ce2e29ff93200bd02fce18e7ad46a134"
-proof_in_this_release = false
-extremality_status = "computed-proof-not-included"
+
+[group]
+generated_order = 48720
+
+[extremality]
+method = "computed"
+package = "not-included"
+review = "internal-ai"
 
 [properties]
 positive_definite = true

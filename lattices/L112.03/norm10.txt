@@ -1,0 +1,3 @@
+# A vector of norm 10 of L112.03, coordinates in the basis of gram.txt (row convention: norm = w G w^T).
+# It shows that the minimum is at most 10. It says nothing about the lower bound.
+80 70 42 127 123 -4 -27 183 134 -33 -96 -38 -129 -71 -91 78 -121 22 82 33 -15 -117 57 25 108 -23 -76 -1 -23 -28 -8 -8 39 15 -2 -29 -16 -30 3 -3 -21 -26 -4 30 0 44 21 -15 6 -8 31 -47 -25 17 18 -18 -11 0 15 1 12 8 -7 13 16 -3 17 -15 13 4 -2 -17 15 -3 -3 5 -4 2 -14 -3 5 6 15 0 -8 6 1 -4 3 -1 2 -2 2 0 3 10 -2 -10 2 6 0 2 -2 6 4 7 -4 4 -7 4 3 -1

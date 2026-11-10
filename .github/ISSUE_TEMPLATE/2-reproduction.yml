@@ -1,0 +1,38 @@
+name: Verification fails or cannot be run / 検算が失敗する・実行できない
+description: A check that fails, or instructions that do not work.
+title: "[repro] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please include the full output. / 出力をすべて貼ってください。
+  - type: input
+    id: version
+    attributes:
+      label: Version / 版
+      description: Tag or commit (`git describe --tags --always`).
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command / 実行したコマンド
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / 出力
+      description: The terminal output, and the file `out/<step>.json` if one was written.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 環境
+      description: Operating system, Python and GAP versions.
+    validations:
+      required: true
