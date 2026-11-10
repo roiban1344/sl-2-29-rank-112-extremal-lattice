@@ -1,10 +1,17 @@
-schema_version = 1
+schema_version = 2
 id = "L112.15"
 dimension = 112
 gram = "gram.txt"
+generators = "generators.txt"
 gram_sha256 = "6a1fef2c3a4f0e14d1dc92b8e0269472dc1c5d129904e616252b63d6cac857ec"
-proof_in_this_release = false
-extremality_status = "open"
+
+[group]
+generated_order = 24360
+
+[extremality]
+method = "open"
+package = "none"
+review = "none"
 
 [properties]
 positive_definite = true

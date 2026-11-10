@@ -5,4 +5,12 @@ authors:
   - name: roiban1344
 title: "Rank 112 lattices with an SL2(29) action"
 license: CC-BY-4.0
-abstract: "Gram matrices and metadata for fourteen lattices presented as extremal and one candidate with open minimum. Proofs are not included."
+abstract: "Gram matrices, group generators, witnesses and metadata for fourteen lattices presented as extremal and one candidate with open minimum. Proofs are not included."
+references:
+  - type: software
+    title: "Independent verification of min(L112.02) = 10"
+    authors:
+      - family-names: Gauvin
+        given-names: Ivan
+    repository-code: "https://github.com/Katabolanga/l112-02-independent-verification"
+    commit: "a78893f59d532f9da1b6cb192b8336ceb8acfd45"

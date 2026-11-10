@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to report an error / 誤りの報告の仕方
+    url: https://github.com/roiban1344/sl-2-29-rank-112-extremal-lattice/blob/main/CONTRIBUTING.md
+    about: What to include, and what happens after a report. / 書いてほしいことと、報告の後の流れ。
